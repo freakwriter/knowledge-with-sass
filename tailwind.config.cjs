@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'media', // or 'selector'
   theme: {
     screens: {
       sm: '640px',
@@ -15,8 +15,8 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      primary: "#9333EA",
-      secondary: "#ff7e33",
+      primary: "#1d4ed8",
+      secondary: "#D89D1D",//"#ff7e33",
       info: "#0C63E7",
       black: colors.black,
       white: colors.white,
@@ -53,6 +53,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      sky: colors.sky,
     }),
     columns: {
       auto: 'auto',
@@ -622,6 +623,8 @@ module.exports = {
       none: 'none',
       disc: 'disc',
       decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
     },
     margin: ({ theme }) => ({
       auto: 'auto',

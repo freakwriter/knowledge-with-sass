@@ -1,0 +1,72 @@
+---
+import Container from "./Container.astro"
+
+---
+
+<div class="relative" id="hero">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-sky-600"></div>
+    </div>
+    <Container>
+        <div class="relative pt-36 ml-auto">
+            <div class="lg:w-2/3 text-center mx-auto">
+                <div class="my-8 flex flex-row place-content-center">
+                    <div>
+                      <img
+                      src="/images/icons/frankenstein.png"
+                      class="w-16 fill-white"
+                      width="512"
+                      height="512"
+                      alt="frankenstein monster illustration"
+                      />
+                    </div>
+                    <div><h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl pl-1">Docs <span class="text-primary dark:text-sky-300">revamp</span> services</h1>
+                    </div>
+                </div>
+                <p class="mt-8 text-gray-700 dark:text-gray-300">This service is for you if you have an existing documentation project you're looking to update or overhaul.
+                    Maybe it's grown so much that it's like a monster. Maybe the content needs a full audit and reorganization.
+                    Maybe you've inherited the documentation from someone else and you're not sure where to begin.
+                    Let's reel it back in, refocus, redefine, and morph those docs into shape!
+                </p>
+                <div class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Service Type</h6>
+                        <p class="mt-2 text-gray-500">Choose the service type that fits your needs</p>
+                    </div>
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Coaching Type</h6>
+                        <p class="mt-2 text-gray-500">Choose quick or full coaching.</p>
+                    </div>
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Schedule a Call</h6>
+                        <p class="mt-2 text-gray-500">Schedule a free 30-minute discovery call.</p>
+                    </div>
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Pay & plan</h6>
+                        <p class="mt-2 text-gray-500">I'll invoice you, you'll pay, and we'll get started.</p>
+                    </div>
+                </div>
+                <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                    <a
+                      href="#"
+                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                    >
+                      <span class="relative text-base font-semibold text-white"
+                        >Book a call</span
+                      >
+                    </a>
+                    <a
+                      href="#features"
+                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+                    >
+                      <span
+                        class="relative text-base font-semibold text-primary dark:text-white"
+                        >Learn more</span
+                      >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </Container>
+</div>

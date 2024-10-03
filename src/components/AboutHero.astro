@@ -1,0 +1,30 @@
+---
+import Container from "./Container.astro";
+
+---
+<div class="relative" id="hero">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-sky-600"></div>
+    </div>
+    <Container>
+        <div class="relative pt-36 ml-auto">
+            <div class="lg:w-2/3 text-center mx-auto">
+                <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">About <span class="text-primary dark:text-sky-300">us</span></h1>
+                <p class="text-gray-600 dark:text-gray-300 mt-8">
+                    After 6+ years working with KnowledgeOwl, I kept having what I called "best practice" calls with customers: 
+                    conversations that weren't about the software, but about what the best, fastest, 
+                    or most maintainable ways to achieve their goals were. 
+                    We often unwound decisions they didn't know they'd made about the processes they used.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-8">
+                    I realized that I was advising on the process of knowledge management, rather than the software or the content. 
+                    And I enjoyed it.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-8">
+                    And so, <span class="font-bold">knowledge <span class="text-primary dark:text-sky-300">with sass</span></span> was born.
+                </p>
+            </div>
+        </div>
+    </Container>
+</div>

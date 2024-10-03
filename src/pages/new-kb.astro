@@ -1,0 +1,16 @@
+---
+import NewKBHero from '../components/NewKBHero.astro';
+import NewKBQuick from '../components/NewKBQuick.astro';
+import NewKBFull from '../components/NewKBFull.astro';
+import Layout from '../layouts/Layout.astro';
+import CallToAction from '../components/CallToAction.astro';
+---
+
+<Layout title="New docs coaching">
+	<main class="space-y-40 mb-40">
+		<NewKBHero/>
+		<NewKBQuick/>
+        <NewKBFull/>
+		<CallToAction/>
+	</main>
+</Layout>
